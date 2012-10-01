@@ -1,0 +1,27 @@
+This is juzu demo
+
+Warmly Welcome lady and gentlemen:
+
+<ul>
+	<li>
+		Name: ${name}, location: ${location}
+	</li>
+</ul>
+<ul>
+	<li><a href="@{index(temp2 = 'French')}">French</a></li>
+</ul>
+
+<ul>
+	<li>
+		Other information: 
+		<% others.each() { other -> %>
+		${other}
+		<% } %>
+</li>
+</ul>
+
+<form action="@{add()}" method="post">
+	<input type="text" name="other" value=""/>
+	<input type="submit"/>
+</form>
+
